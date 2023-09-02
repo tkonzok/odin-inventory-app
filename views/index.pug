@@ -2,4 +2,10 @@ extends layout
 
 block content
   h1= title
-  p Welcome to #{title}
+  p Welcome to the #[em Inventory App], a very basic Express website developed as part of #[a(href="https://theodinproject.com/lessons/nodejs-inventory-application") The Odin Project].
+
+  p The inventory has the following record counts:
+
+  ul
+    li #[strong Items:] !{item_count}
+    li #[strong Categories:] !{category_count}
