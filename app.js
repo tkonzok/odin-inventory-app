@@ -1,8 +1,8 @@
+import 'dotenv/config';
 const mongoose = require("mongoose");
 mongoose.set("strictQuery", false);
 
-const dev_db_url = "mongodb+srv://admin:admin12345@cluster0.wsje9nm.mongodb.net/inventory_app?retryWrites=true&w=majority";
-const mongoDB = process.env.MONGODB_URI || dev_db_url;
+const mongoDB = process.env.MONGODB_URI;
 
 main().catch((err) => console.log(err));
 async function main() {
